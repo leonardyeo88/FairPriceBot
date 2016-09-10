@@ -42,7 +42,34 @@ app.post('/webhook', function (req, res) {
             if(temp.includes("tiramisu")){
                 sendMessage(event.sender.id, {text: "These are the ingredients you need for the Tiramisu cake, 3 cups of strong black coffee, preferably espresso, cooled. 3 tbsp caster sugar. 6 tbsp Amaretto liqueur.2 eggs, separated.250g/8¾oz mascarpone cheese.250ml/8¾ fl oz whipped cream.cocoa powder, to dust.1 packet of Savoiardi (sponge lady finger biscuits)" });
                 sendMessage(event.sender.id, {text: "Enter 'add to cart' and the item number of the ingredients you would like to order. If you would like more than one item, enter more and the item number. or else 'confirm order' to check out"});
-                sendMessage(event.sender.id, {text: "List: Lemon Cake, Chocolate Cake, Tiramisu, Lava Cake, Matcha Cake, Fruit Cake, Strawberry Cake"});
+
+                var imageUrl = "http://foodnetwork.sndimg.com/content/dam/images/food/fullset/2011/2/4/2/RX-FNM_030111-Sugar-Fix-005_s4x3.jpg.rend.sni12col.landscape.jpeg";
+
+                message = {
+                    "attachment": {
+                        "type": "template",
+                        "payload": {
+                            "template_type": "generic",
+                            "elements": [{
+                                "title": "Tiramisu",
+                                "subtitle": "Delicious Tiramisu",
+                                "image_url": imageUrl ,
+                                "buttons": [{
+                                    "type": "web_url",
+                                    "url": imageUrl,
+                                    "title": "Tiramisu"
+                                    }, {
+                                    "type": "postback",
+                                    "title": "I like this",
+                                    "payload": "User " + recipientId + " likes tiramisu " + imageUrl,
+                                }]
+                            }]
+                        }
+                    }
+                };
+
+
+    
             }
             if(temp.includes("confirm order")){
                 sendMessage(event.sender.id, {text: "Would you like for self-collection or home delivery"});
