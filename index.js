@@ -26,13 +26,17 @@ app.get('/webhook', function (req, res) {
 // handler receiving messages
 app.post('/webhook', function (req, res) {
     var events = req.body.entry[0].messaging;
+    var event = events[0];
+    sendMessage(event.sender.id, {text: "Hi, how can I help you?"});
+
     for (i = 0; i < events.length; i++) {
-        var event = events[i];
+        event = events[i];
         if (event.message && event.message.text) {
             var temp = event.message.text;
             temp = temp.toLowerCase();
 
-            if(temp.includes('cake')){
+         
+            if (temp.includes('cake')){
                sendMessage(event.sender.id, {text: "Which one do you like?"});
                sendMessage(event.sender.id, {text: "List: Lemon Cake, Chocolate Cake, Tiramisu, Lava Cake, Matcha Cake, Fruit Cake, Strawberry Cake"});
                sendMessage(event.sender.id, {text: "Sure!. Here are some cakes that I recommend!"});
