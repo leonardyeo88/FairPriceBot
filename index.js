@@ -26,11 +26,11 @@ app.get('/webhook', function (req, res) {
 // handler receiving messages
 app.post('/webhook', function (req, res) {
     var events = req.body.entry[0].messaging;
-    var event = events[0];
-    sendMessage(event.sender.id, {text: "Hi, how can I help you?"});
+    // var event = events[0];
+    // sendMessage(event.sender.id, {text: "Hi, how can I help you?"});
 
     for (i = 0; i < events.length; i++) {
-        event = events[i];
+        var event = events[i];
         if (event.message && event.message.text) {
             var temp = event.message.text;
             temp = temp.toLowerCase();
