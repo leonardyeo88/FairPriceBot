@@ -38,10 +38,10 @@ app.post('/webhook', function (req, res) {
          
             if (temp.includes('cake')){
                sendMessage(event.sender.id, {text: "Which one do you like?"});
-               sendMessage(event.sender.id, {text: "List: Lemon Cake, Chocolate Cake, Tiramisu, Lava Cake, Matcha Cake, Fruit Cake, Strawberry Cake"});
-               sendMessage(event.sender.id, {text: "Sure!. Here are some cakes that I recommend!"});
+               sendMessage(event.sender.id, {text: "List: \n Lemon Cake, Chocolate Cake, Tiramisu, Lava Cake, Matcha Cake, Fruit Cake, Strawberry Cake"});
+               sendMessage(event.sender.id, {text: "Sure! Here are some cakes that I recommend!"});
             }
-            if(temp.includes('tiramisu')){
+            if (temp.includes('tiramisu')){
                 sendMessage(event.sender.id, {text: "These are the ingredients you need for the Tiramisu cake, 3 cups of strong black coffee, preferably espresso, cooled. 3 tbsp caster sugar. 6 tbsp Amaretto liqueur.2 eggs, separated.250g/8¾oz mascarpone cheese.250ml/8¾ fl oz whipped cream.cocoa powder, to dust.1 packet of Savoiardi (sponge lady finger biscuits)" });
                 sendMessage(event.sender.id, {text: "Enter 'add to cart' and the item number of the ingredients you would like to order. If you would like more than one item, enter more and the item number. or else 'confirm order' to check out"});
 
