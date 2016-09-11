@@ -35,10 +35,10 @@ app.post('/webhook', function (req, res) {
             var temp = event.message.text;
             temp = temp.toLowerCase();
 
-<<<<<<< HEAD
+
             if(temp.includes('diaper')) {
-                sendMessage(event.sender.id, {text:"Would you like to send an incident report to help Pampers improve on their diapers?"});
-                sendMessage(event.sender.id, {text:"Super-absorbent gel beads are commonly used in disposable diapers and in the packaging of many food products."});   
+                sendMessage(event.sender.id, {text: "Would you like to send an incident report to help Pampers improve on their diapers?"});
+                sendMessage(event.sender.id, {text: "Super-absorbent gel beads are commonly used in disposable diapers and in the packaging of many food products."});   
                 sendMessage(event.sender.id, {text: "These small gel beads absorb nearly 30 times their weight, to help lock moisture away from baby’s skin. "});
                 sendMessage(event.sender.id, {text: "Occasionally, you may see some of these gel beads on baby’s skin. They are safe and can be gently wiped away. "});
                 sendMessage(event.sender.id, {text: "To learn more about what’s in a diaper, read our article about diaper ingredients."});
@@ -48,21 +48,17 @@ app.post('/webhook', function (req, res) {
                 sendMessage(event.sender.id, {text: 'Sure thing!'});
             }
 
-=======
->>>>>>> parent of fa22e3b... new messages
          
             if (temp.includes('cake')){
                sendMessage(event.sender.id, {text: "Which one do you like?"});
                sendMessage(event.sender.id, {text: "List: \n Lemon Cake, Chocolate Cake, Tiramisu, Lava Cake, Matcha Cake, Fruit Cake, Strawberry Cake"});
                sendMessage(event.sender.id, {text: "Sure! Here are some cakes that I recommend!"});
             }
-<<<<<<< HEAD
 
-            if (temp.includes('tiramisu')) {
-=======
+
             if (temp.includes('tiramisu')){
                 sendMessage(event.sender.id, {text: "These are the ingredients you need for the Tiramisu cake, 3 cups of strong black coffee, preferably espresso, cooled. 3 tbsp caster sugar. 6 tbsp Amaretto liqueur.2 eggs, separated.250g/8¾oz mascarpone cheese.250ml/8¾ fl oz whipped cream.cocoa powder, to dust.1 packet of Savoiardi (sponge lady finger biscuits)" });
->>>>>>> parent of fa22e3b... new messages
+
                 sendMessage(event.sender.id, {text: "Enter 'add to cart' and the item number of the ingredients you would like to order. If you would like more than one item, enter more and the item number. or else 'confirm order' to check out"});
                 sendMessage(event.sender.id, {text: "These are the ingredients you need for the Tiramisu cake " });
                 sendMessage(event.sendier.id, {text: "- 3 cups of strong black coffee, preferably espresso, cooled \n- 3 tbsp caster sugar\n- 6 tbsp Amaretto liqueur.\n- 2 eggs, separated \n- 250g/8¾oz mascarpone cheese \n- 250ml/8¾ fl oz whipped cream \n- cocoa powder, to dust \n- 1 packet of Savoiardi (sponge lady finger biscuits)"});         
@@ -103,12 +99,9 @@ app.post('/webhook', function (req, res) {
             if(temp.includes('collection')){
                 sendMessage(event.sender.id, {text: "Great! Your order is being processed by Maria and will be ready for pick-up in 10 minutes"});
             }
-<<<<<<< HEAD
 
-            if (temp.includes('thanks')){
-=======
             if(temp.includes('thanks')){
->>>>>>> parent of fa22e3b... new messages
+
                sendMessage(event.sender.id, {text: "Sure Thing! Good luck with your baking and happy birthday to John!"});
             }
             
