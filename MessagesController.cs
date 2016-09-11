@@ -47,7 +47,7 @@ namespace BotApp
 
                     case "tiramisu":
                         string message = "Those are the ingredients you need for the Tiramisu cake -- See recipe [here](http://www.epicurious.com/recipes/food/views/tiramisu-351138).";
-                        message += "\n1. Flour (1Kg) \n2. Milk (1L) \n3. Egg (1 dozen) \n4. Brandy (1L) \n5. Whipped Cream (100ml) \n6. Dark Chocolate (1 block) \n7. White Sugar (1Kg)";
+                        message += "\n1. Flour (1Kg) \n2. Milk (1L) \n3. Egg (1 dozen) \n4. Brandy (1L) \n5. Whipped Cream (100ml) \n6. Dark Chocolate (1 block) \n7. White Sugar (1Kg) \n\n\n\n\n Enter the item numbers of the ingredients you would like to order.";
                         reply = activity.CreateReply(message);
                         await connector.Conversations.ReplyToActivityAsync(reply);
                         break;
@@ -82,7 +82,7 @@ namespace BotApp
                     case "no my baby is crying again. i need milk":
                         reply = activity.CreateReply($"Enter confirm to purchase your previous milk order.");
                         await connector.Conversations.ReplyToActivityAsync(reply);
-                        string message = "![duck](https://www.frisogold.com.my/sites/journey-of-friso-gold-milk/assets/batch_tracker/img/friso-tin.png)";
+                        message = "![Friso](https://www.frisogold.com.my/sites/journey-of-friso-gold-milk/assets/batch_tracker/img/friso-tin.png)";
                         reply = activity.CreateReply(message);
                         await connector.Conversations.ReplyToActivityAsync(reply);
                         reply = activity.CreateReply($"Or enter change order to choose another brand.");
@@ -90,8 +90,8 @@ namespace BotApp
                         break;
                         
                     case "confirm":
-                        string message = "Great. Your delivery will arrive in approximately 10 minutes via [FoodPanda](https://www.foodpanda.sg/).";
-                        message += "Hang tight baby! Help is on the way. Botler to the rescue. :)"
+                        message = "Great. Your delivery will arrive in approximately 10 minutes via [FoodPanda](https://www.foodpanda.sg/).";
+                        message += "Hang tight baby! Help is on the way. Botler to the rescue. :)";
                         reply = activity.CreateReply(message);
                         await connector.Conversations.ReplyToActivityAsync(reply);
                         
@@ -100,14 +100,14 @@ namespace BotApp
                         break;
                         
                         
-                    case "there are beads from the diapers on my baby's skin?":
-                        reply = activity.CreateReply($"Super-absorbent gel beads are commonly used in disposable diapers and in the packaging of many food products. These small gel beads absorb nearly 30 times their weight, to help lock moisture away from baby’s skin. Occasionally, you may see some of these gel beads on baby’s skin. They are safe and can be gently wiped away. To learn more about what’s in a diaper, read our [article](http://www.pampers.com/en-us/about-pampers/diapers-and-wipes/article/whats-in-a-pampers-diaper) about diaper ingredients.");
+                    case "there are beads from the diaper on my baby's skin?":
+                        reply = activity.CreateReply($"Hey, Jasmine. Super-absorbent gel beads are commonly used in disposable diapers and in the packaging of many food products. These small gel beads absorb nearly 30 times their weight, to help lock moisture away from baby’s skin. Occasionally, you may see some of these gel beads on baby’s skin. They are safe and can be gently wiped away. To learn more about what’s in a diaper, read Pamper's [article](http://www.pampers.com/en-us/about-pampers/diapers-and-wipes/article/whats-in-a-pampers-diaper) about diaper ingredients.");
                         await connector.Conversations.ReplyToActivityAsync(reply);
                         reply = activity.CreateReply($"Would you like to send an incident report to help Pampers improve on their diapers?");
                         await connector.Conversations.ReplyToActivityAsync(reply);
                         break;
                     
-                    case "yes please":
+                    case "thanks. yes please":
                         reply = activity.CreateReply($"Sure thing! :)");
                         await connector.Conversations.ReplyToActivityAsync(reply);
                         break;
@@ -168,7 +168,7 @@ namespace BotApp
             await context.PostAsync(message);
             context.Wait(MessageReceived);
         }
-
+        //test
         [LuisIntent("recommendation")]
         public async Task ShowRecommendation(IDialogContext context, LuisResult result)
         {
@@ -235,13 +235,20 @@ namespace BotApp
             context.Wait(MessageReceived);
         }
 
+        /*[LuisIntent("None")]
+        public async Task AskMeaning(IDialogContext context, LuisResult result)
+        {
 
-
-           // /*
-            public SimpleAlarmDialog(ILuisService service = null)
+            string message = "Please rephrase your statement?" + result.Query;
+            await context.PostAsync(message);
+            context.Wait(MessageReceived);
+        }
+        */
+        // /*
+        public SimpleAlarmDialog(ILuisService service = null)
               : base(service)
             {
             }
-           // */
+        // */
         }
     }
