@@ -38,7 +38,13 @@ app.post('/webhook', function (req, res) {
             if(temp.includes('diaper')) {
                 sendMessage(event.sender.id, {text:"Would you like to send an incident report to help Pampers improve on their diapers?"});
                 sleep(1000);
-                sendMessage(event.sender.id, {text:"Super-absorbent gel beads are commonly used in disposable diapers and in the packaging of many food products. These small gel beads absorb nearly 30 times their weight, to help lock moisture away from baby’s skin. Occasionally, you may see some of these gel beads on baby’s skin. They are safe and can be gently wiped away. To learn more about what’s in a diaper, read our article about diaper ingredients."});   
+                sendMessage(event.sender.id, {text:"Super-absorbent gel beads are commonly used in disposable diapers and in the packaging of many food products."});   
+                sleep(1000);
+                sendMessage(event.sender.id, {text: "These small gel beads absorb nearly 30 times their weight, to help lock moisture away from baby’s skin. "});
+                sleep(1000);
+                sendMessage(event.sender.id, {text: "Occasionally, you may see some of these gel beads on baby’s skin. They are safe and can be gently wiped away. "});
+                sleep(1000);
+                sendMessage(event.sender.id, {text: "To learn more about what’s in a diaper, read our article about diaper ingredients."});
             }
 
             if (temp.includes('yes')){
@@ -57,8 +63,9 @@ app.post('/webhook', function (req, res) {
             if (temp.includes('tiramisu')) {
                 sendMessage(event.sender.id, {text: "Enter 'add to cart' and the item number of the ingredients you would like to order. If you would like more than one item, enter more and the item number. or else 'confirm order' to check out"});
                 sleep(1000);
-                sendMessage(event.sender.id, {text: "These are the ingredients you need for the Tiramisu cake \n- 3 cups of strong black coffee, preferably espresso, cooled \n- 3 tbsp caster sugar\n- 6 tbsp Amaretto liqueur.\n- 2 eggs, separated \n- 250g/8¾oz mascarpone cheese \n- 250ml/8¾ fl oz whipped cream \n- cocoa powder, to dust \n- 1 packet of Savoiardi (sponge lady finger biscuits)" });
-                sleep(1000);         
+                sendMessage(event.sender.id, {text: "These are the ingredients you need for the Tiramisu cake " });
+                sleep(1000);
+                sendMessage(event.sendier.id, {text: "- 3 cups of strong black coffee, preferably espresso, cooled \n- 3 tbsp caster sugar\n- 6 tbsp Amaretto liqueur.\n- 2 eggs, separated \n- 250g/8¾oz mascarpone cheese \n- 250ml/8¾ fl oz whipped cream \n- cocoa powder, to dust \n- 1 packet of Savoiardi (sponge lady finger biscuits)"});         
 
                 var imageUrl = "http://foodnetwork.sndimg.com/content/dam/images/food/fullset/2011/2/4/2/RX-FNM_030111-Sugar-Fix-005_s4x3.jpg.rend.sni12col.landscape.jpeg";
 
