@@ -1,0 +1,39 @@
+C:\Users\ValuedAcerCustomer\Desktop\workspace\NUSHackFest\BotApp\BotApp\bin\Bot Application1.dll.config
+C:\Users\ValuedAcerCustomer\Desktop\workspace\NUSHackFest\BotApp\BotApp\bin\Bot Application1.dll
+C:\Users\ValuedAcerCustomer\Desktop\workspace\NUSHackFest\BotApp\BotApp\bin\Bot Application1.pdb
+C:\Users\ValuedAcerCustomer\Desktop\workspace\NUSHackFest\BotApp\BotApp\bin\Autofac.dll
+C:\Users\ValuedAcerCustomer\Desktop\workspace\NUSHackFest\BotApp\BotApp\bin\Chronic.dll
+C:\Users\ValuedAcerCustomer\Desktop\workspace\NUSHackFest\BotApp\BotApp\bin\Microsoft.Bot.Builder.dll
+C:\Users\ValuedAcerCustomer\Desktop\workspace\NUSHackFest\BotApp\BotApp\bin\Microsoft.Bot.Connector.dll
+C:\Users\ValuedAcerCustomer\Desktop\workspace\NUSHackFest\BotApp\BotApp\bin\Microsoft.IdentityModel.Protocol.Extensions.dll
+C:\Users\ValuedAcerCustomer\Desktop\workspace\NUSHackFest\BotApp\BotApp\bin\Microsoft.Rest.ClientRuntime.dll
+C:\Users\ValuedAcerCustomer\Desktop\workspace\NUSHackFest\BotApp\BotApp\bin\Microsoft.WindowsAzure.Configuration.dll
+C:\Users\ValuedAcerCustomer\Desktop\workspace\NUSHackFest\BotApp\BotApp\bin\Newtonsoft.Json.dll
+C:\Users\ValuedAcerCustomer\Desktop\workspace\NUSHackFest\BotApp\BotApp\bin\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\ValuedAcerCustomer\Desktop\workspace\NUSHackFest\BotApp\BotApp\bin\System.Net.Http.Formatting.dll
+C:\Users\ValuedAcerCustomer\Desktop\workspace\NUSHackFest\BotApp\BotApp\bin\System.Web.Http.dll
+C:\Users\ValuedAcerCustomer\Desktop\workspace\NUSHackFest\BotApp\BotApp\bin\System.Web.Http.WebHost.dll
+C:\Users\ValuedAcerCustomer\Desktop\workspace\NUSHackFest\BotApp\BotApp\bin\Autofac.xml
+C:\Users\ValuedAcerCustomer\Desktop\workspace\NUSHackFest\BotApp\BotApp\bin\Microsoft.Bot.Builder.xml
+C:\Users\ValuedAcerCustomer\Desktop\workspace\NUSHackFest\BotApp\BotApp\bin\Microsoft.Bot.Connector.xml
+C:\Users\ValuedAcerCustomer\Desktop\workspace\NUSHackFest\BotApp\BotApp\bin\Microsoft.IdentityModel.Protocol.Extensions.pdb
+C:\Users\ValuedAcerCustomer\Desktop\workspace\NUSHackFest\BotApp\BotApp\bin\Microsoft.IdentityModel.Protocol.Extensions.xml
+C:\Users\ValuedAcerCustomer\Desktop\workspace\NUSHackFest\BotApp\BotApp\bin\Microsoft.Rest.ClientRuntime.xml
+C:\Users\ValuedAcerCustomer\Desktop\workspace\NUSHackFest\BotApp\BotApp\bin\Microsoft.WindowsAzure.Configuration.xml
+C:\Users\ValuedAcerCustomer\Desktop\workspace\NUSHackFest\BotApp\BotApp\bin\Newtonsoft.Json.xml
+C:\Users\ValuedAcerCustomer\Desktop\workspace\NUSHackFest\BotApp\BotApp\bin\System.IdentityModel.Tokens.Jwt.pdb
+C:\Users\ValuedAcerCustomer\Desktop\workspace\NUSHackFest\BotApp\BotApp\bin\System.IdentityModel.Tokens.Jwt.xml
+C:\Users\ValuedAcerCustomer\Desktop\workspace\NUSHackFest\BotApp\BotApp\bin\System.Net.Http.Formatting.xml
+C:\Users\ValuedAcerCustomer\Desktop\workspace\NUSHackFest\BotApp\BotApp\bin\System.Web.Http.xml
+C:\Users\ValuedAcerCustomer\Desktop\workspace\NUSHackFest\BotApp\BotApp\bin\System.Web.Http.WebHost.xml
+C:\Users\ValuedAcerCustomer\Desktop\workspace\NUSHackFest\BotApp\BotApp\bin\ar\Microsoft.Bot.Builder.resources.dll
+C:\Users\ValuedAcerCustomer\Desktop\workspace\NUSHackFest\BotApp\BotApp\bin\en\Microsoft.Bot.Builder.resources.dll
+C:\Users\ValuedAcerCustomer\Desktop\workspace\NUSHackFest\BotApp\BotApp\bin\es\Microsoft.Bot.Builder.resources.dll
+C:\Users\ValuedAcerCustomer\Desktop\workspace\NUSHackFest\BotApp\BotApp\bin\fa\Microsoft.Bot.Builder.resources.dll
+C:\Users\ValuedAcerCustomer\Desktop\workspace\NUSHackFest\BotApp\BotApp\bin\fr\Microsoft.Bot.Builder.resources.dll
+C:\Users\ValuedAcerCustomer\Desktop\workspace\NUSHackFest\BotApp\BotApp\bin\ja\Microsoft.Bot.Builder.resources.dll
+C:\Users\ValuedAcerCustomer\Desktop\workspace\NUSHackFest\BotApp\BotApp\bin\ru\Microsoft.Bot.Builder.resources.dll
+C:\Users\ValuedAcerCustomer\Desktop\workspace\NUSHackFest\BotApp\BotApp\bin\zh-hans\Microsoft.Bot.Builder.resources.dll
+C:\Users\ValuedAcerCustomer\Desktop\workspace\NUSHackFest\BotApp\BotApp\obj\Debug\Bot Application1.dll
+C:\Users\ValuedAcerCustomer\Desktop\workspace\NUSHackFest\BotApp\BotApp\obj\Debug\Bot Application1.pdb
+C:\Users\ValuedAcerCustomer\Desktop\workspace\NUSHackFest\BotApp\BotApp\obj\Debug\BotApp.csprojResolveAssemblyReference.cache
